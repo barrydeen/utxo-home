@@ -1,0 +1,278 @@
+{
+    "names": {
+        "_": "e2ccf7cf20403f3f2a4a55b328f0de3be38558a7d5f33632fdaaefc726c1c8eb",
+        "nostr": "e2ccf7cf20403f3f2a4a55b328f0de3be38558a7d5f33632fdaaefc726c1c8eb",
+        "bot": "e2ccf42180c56901bd03ddb7c26d37752b7aecc0a59a4fb2d59cefd44eb9291d",
+        "rektbot": "1c6cb22996baabe921bcd45c8b6213b2dab096f88e4ba5678d43d195a1868551",
+        "bbc": "9c5d0c591dfe800250799a7c1c636f831469566774a61291b08bd3c0e4e08fb8",
+        "cbc": "9c5d004ec7b7514579e9ed7fb40bb35188b233044cf718e094ee8fcd9ae3d3cf",
+        "npr": "9c5d0067559081d216c3a5bc2c940963fabad1d0a972a9204277d09efb43186d",
+        "aljazeera": "9c5d0fdb227051d4a1f7a862e2c24b86f61fca16426b432c672678cd4016ece5",
+        "rt": "9c5d062ab65b614da84392d70a2744e91ee1a578e0411711432448da2b672b5f",
+        "toi": "9c5d0bcc45600824aac42825e60bb9e1ff96072e523d29f60fac17f34787ce5e",
+        "nyt": "9c5d011f28c056b7122f7cdc040f862e0c199196ee8fc6aa017d97c2fc5bb983",
+        "wp": "9c5d06694c65a32065650f45404de916d3a5330ba307984aac8f2242d516c048",
+        "abc": "9c5d0b120f01b75292d2a2bc32972bf918c8dd8927eaa633d3f62e181a292b27",
+        "cnn": "9c5d0b35e3fef1fbb98c629ea2226072708077939ba4d3319cef03acad37880d",
+        "globalnews": "9c5d0d56dc2b4260c1e95af98533e7b3afbf55df047656947aa75834c73ddeca",
+        "time": "9c5d0ef9a5def0d90bdb78b4d36753897b7225f929177f0d070074530c5c9988",
+        "latimes": "9c5d0379dd6479e6cd68e2e96569d6a94c44c164b8cedf26faf826ce9a78e0f9",
+        "fox": "9c5d04b8223d7d45b0f2838c2341e72bd6a2d4ae0baf80475567dd95b5b2cb2c",
+        "bitcoinmagazine": "9c5d0df5f599f957fa2b0d29ce7c36fb2dd0516cbeb5bc9bc4a41747418ffcb4",
+        "cointelegraph": "9c5d0095a33aa75300c52b2a614a8e496541dba88cd9a3436d0b733239ebcb43",
+        "cnbc": "9c5d08b2d0cc701d016d4b69c071d6f1b1a039104f08daae1170c6ca867f67c1",
+        "zerohedge": "9c5d07933092ed10933ef2cf4b006fdd77e9c76ed3e24cade98098fe0176d77e",
+        "hackernews": "9c5d0c67316720a2414ddeed959240d84a659a105004057f5bddb49179be8167",
+        "espn": "9c5d01115fa08ba8efbe5922bdd437bd712b659042c50d31443b82e752181c11",
+        "vox": "9c5d08bf540a89f3e42945245674dce956257e71e501136b1091fb4eb30ace7c",
+        "techcrunch": "9c5d0dcdb229f84cf97e837e23b7533113ea27c6a3e475b0172d260dfaff5890",
+        "engadget": "9c5d071532595a48cd73cb3016097bb94ace3a8c4ff61d74ddc2a46151b81399",
+        "lifehacker": "9c5d07b2a549be24d8ac36ce54525a3152f23cba688c627498d4366940e3282a",
+        "techradar": "9c5d04bd27ad4b8a417e0c889c1c09a235e1b9f42078a26d5fac5b15e40e3179",
+        "cnet": "9c5d0ec8396aa433e2e5239f04074e796c98954bf543bdd360d907cb3ce898f0",
+        "gizmodo": "9c5d0c006a5701b7c2aee51e50490e4cc59ca4c9abf937049c769d34d5aee5f2",
+        "wired": "9c5d0fe246b80bc313082aa3dbb4f82744751ca8d79901dc74f7eb69bba8ad4b",
+        "theverge": "9c5d0eb4ef7b5519424119848840c1d146ae6de3c8e0047f42531080dec50c69",
+        "tomshardware": "9c5d0674a8bcf23e60faa911d884afa78c441e515ba2a4f480edce9b181409e0",
+        "mashable": "9c5d03b41b6b129a333a6293dad2fabbdf1760ffc25d0c780ed8a2a5254a8acb",
+        "arstechnica": "9c5d057b9c8aeb8b203f2e1bcb9816d0ddaeb5a8a06a12866bf1d6bdc8e4c194",
+        "economist": "9c5d0bfebc656f76e052f5e3e894a7789f7bac05d1feb45611bf62dffc66a50d",
+        "fastcompany": "9c5d04020f027a05d29ee3f7551e5043033e3bb5768f068d999b09f86e883a29",
+        "financialtimes": "9c5d0eae57810b692b8dcf395844dd990d3cec6c7e57e042ead88cb811e78c01",
+        "wsj": "9c5d0c51d47bf9cbbe120dbb3257cdecc0368c1cd2288660d7d711d6637e7b95",
+        "yahoofinance": "9c5d07148ac287b7a252f75777cc695c24e1dff67e799ef4e0c6f429798b2576",
+        "fortune": "9c5d006c88c08d8dd3fd68776df23f96eae73bd62552078022969df4e0e4eeb7",
+        "financialpost": "9c5d0eed2fc8e2da2d12056c2d0363ac7a326090c3f3b93afb15723755faa562",
+        "entrepreneur": "9c5d0b5c66a82ae7894051c134eb6eb100a6026b03ffb6ad9f01d7647c563df9",
+        "inc": "9c5d0023088483ffdf6bb6690a9b9decce4f866bb2f5038f726725807462054c",
+        "hbr": "9c5d0b7153700becfe94d740a68884961dc8a84b132647e8e2b593f3a0e15a4f"
+    },
+    "relays": {
+        "e2ccf7cf20403f3f2a4a55b328f0de3be38558a7d5f33632fdaaefc726c1c8eb": [
+            "wss://relay.utxo.one",
+            "wss://wot.utxo.one",
+            "wss://frens.utxo.one",
+            "wss://relay.bitcoinpark.com"
+        ],
+        "e2ccf42180c56901bd03ddb7c26d37752b7aecc0a59a4fb2d59cefd44eb9291d": [
+            "wss://wot.utxo.one",
+            "wss://frens.utxo.one",
+            "wss://bots.utxo.one"
+        ],
+        "1c6cb22996baabe921bcd45c8b6213b2dab096f88e4ba5678d43d195a1868551": [
+            "wss://wot.utxo.one",
+            "wss://frens.utxo.one",
+            "wss://bots.utxo.one"
+        ],
+        "9c5d0c591dfe800250799a7c1c636f831469566774a61291b08bd3c0e4e08fb8": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d004ec7b7514579e9ed7fb40bb35188b233044cf718e094ee8fcd9ae3d3cf": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d0067559081d216c3a5bc2c940963fabad1d0a972a9204277d09efb43186d": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d0fdb227051d4a1f7a862e2c24b86f61fca16426b432c672678cd4016ece5": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d062ab65b614da84392d70a2744e91ee1a578e0411711432448da2b672b5f": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d0bcc45600824aac42825e60bb9e1ff96072e523d29f60fac17f34787ce5e": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d011f28c056b7122f7cdc040f862e0c199196ee8fc6aa017d97c2fc5bb983": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d06694c65a32065650f45404de916d3a5330ba307984aac8f2242d516c048": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d0b120f01b75292d2a2bc32972bf918c8dd8927eaa633d3f62e181a292b27": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d0b35e3fef1fbb98c629ea2226072708077939ba4d3319cef03acad37880d": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d0d56dc2b4260c1e95af98533e7b3afbf55df047656947aa75834c73ddeca": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d0ef9a5def0d90bdb78b4d36753897b7225f929177f0d070074530c5c9988": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d0379dd6479e6cd68e2e96569d6a94c44c164b8cedf26faf826ce9a78e0f9": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d04b8223d7d45b0f2838c2341e72bd6a2d4ae0baf80475567dd95b5b2cb2c": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d0df5f599f957fa2b0d29ce7c36fb2dd0516cbeb5bc9bc4a41747418ffcb4": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d0095a33aa75300c52b2a614a8e496541dba88cd9a3436d0b733239ebcb43": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d08b2d0cc701d016d4b69c071d6f1b1a039104f08daae1170c6ca867f67c1": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d07933092ed10933ef2cf4b006fdd77e9c76ed3e24cade98098fe0176d77e": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d0c67316720a2414ddeed959240d84a659a105004057f5bddb49179be8167": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d01115fa08ba8efbe5922bdd437bd712b659042c50d31443b82e752181c11": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d08bf540a89f3e42945245674dce956257e71e501136b1091fb4eb30ace7c": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d0dcdb229f84cf97e837e23b7533113ea27c6a3e475b0172d260dfaff5890": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d071532595a48cd73cb3016097bb94ace3a8c4ff61d74ddc2a46151b81399": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d07b2a549be24d8ac36ce54525a3152f23cba688c627498d4366940e3282a": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d04bd27ad4b8a417e0c889c1c09a235e1b9f42078a26d5fac5b15e40e3179": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d0ec8396aa433e2e5239f04074e796c98954bf543bdd360d907cb3ce898f0": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d0c006a5701b7c2aee51e50490e4cc59ca4c9abf937049c769d34d5aee5f2": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d0fe246b80bc313082aa3dbb4f82744751ca8d79901dc74f7eb69bba8ad4b": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d0eb4ef7b5519424119848840c1d146ae6de3c8e0047f42531080dec50c69": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d0674a8bcf23e60faa911d884afa78c441e515ba2a4f480edce9b181409e0": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d03b41b6b129a333a6293dad2fabbdf1760ffc25d0c780ed8a2a5254a8acb": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d057b9c8aeb8b203f2e1bcb9816d0ddaeb5a8a06a12866bf1d6bdc8e4c194": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d0bfebc656f76e052f5e3e894a7789f7bac05d1feb45611bf62dffc66a50d": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d04020f027a05d29ee3f7551e5043033e3bb5768f068d999b09f86e883a29": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d0eae57810b692b8dcf395844dd990d3cec6c7e57e042ead88cb811e78c01": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d0c51d47bf9cbbe120dbb3257cdecc0368c1cd2288660d7d711d6637e7b95": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d07148ac287b7a252f75777cc695c24e1dff67e799ef4e0c6f429798b2576": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d006c88c08d8dd3fd68776df23f96eae73bd62552078022969df4e0e4eeb7": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d0eed2fc8e2da2d12056c2d0363ac7a326090c3f3b93afb15723755faa562": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d0b5c66a82ae7894051c134eb6eb100a6026b03ffb6ad9f01d7647c563df9": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d0023088483ffdf6bb6690a9b9decce4f866bb2f5038f726725807462054c": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ],
+        "9c5d0b7153700becfe94d740a68884961dc8a84b132647e8e2b593f3a0e15a4f": [
+            "wss://news.utxo.one",
+            "wss://bots.utxo.one",
+            "wss://wot.utxo.one"
+        ]
+    }
+}
