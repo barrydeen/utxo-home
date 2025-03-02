@@ -14,7 +14,14 @@
 <body>
     <div class="digital-rain"></div>
     
-    <nav class="navbar utxo-nav" x-data="{ mobileMenuOpen: false }">
+    <nav class="navbar utxo-nav" x-data="{ mobileMenuOpen: false }" 
+        x-init="$watch('mobileMenuOpen', value => {
+            if(value) {
+                document.body.classList.add('menu-open');
+            } else {
+                document.body.classList.remove('menu-open');
+            }
+        })">
         <div class="container nav-container">
             <div class="logo utxo-logo"><span class="terminal-prefix">$</span> utxo the webmaster<span class="blink">_</span></div>
             

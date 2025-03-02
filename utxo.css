@@ -1233,8 +1233,8 @@ body, html {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 90;
     pointer-events: all;
@@ -1302,6 +1302,8 @@ body, html {
         margin: 0;
         transform: translateX(100%);
         transition: transform 0.3s ease;
+        visibility: visible;
+        pointer-events: auto;
     }
     
     .nav-links.active {
@@ -1323,4 +1325,62 @@ body, html {
 /* Alpine.js specific styles */
 [x-cloak] {
     display: none !important;
+}
+
+/* Add these styles to fix the horizontal scrolling issue */
+
+/* Prevent horizontal scrolling on all devices */
+html, body {
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+}
+
+/* Update the mobile menu styling to ensure it's properly hidden */
+@media (max-width: 576px) {
+    /* Existing mobile menu code... */
+    
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: var(--darker-bg);
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 80px 30px 30px;
+        z-index: 100;
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
+        border-left: 1px solid rgba(142, 68, 173, 0.3);
+        margin: 0;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        /* Add these properties to ensure the menu is truly hidden */
+        visibility: visible;
+        pointer-events: auto;
+    }
+    
+    .nav-links.active {
+        transform: translateX(0);
+    }
+}
+
+/* Ensure the menu overlay covers the entire viewport */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Use viewport width instead of percentage */
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 90;
+    pointer-events: all;
+}
+
+/* Add styles for when the menu is open */
+body.menu-open {
+    overflow: hidden;
 }
