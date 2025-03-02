@@ -9,39 +9,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
     <div class="digital-rain"></div>
     
-    <nav class="navbar utxo-nav" x-data="{ mobileMenuOpen: false }" 
-        x-init="$watch('mobileMenuOpen', value => {
-            if(value) {
-                document.body.classList.add('menu-open');
-            } else {
-                document.body.classList.remove('menu-open');
-            }
-        })">
+    <nav class="navbar utxo-nav">
         <div class="container nav-container">
             <div class="logo utxo-logo"><span class="terminal-prefix">$</span> utxo the webmaster<span class="blink">_</span></div>
             
-            <!-- Hamburger menu button (only visible on mobile) -->
-            <div class="hamburger-menu" @click="mobileMenuOpen = !mobileMenuOpen" :class="{ 'active': mobileMenuOpen }">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            
-            <!-- Mobile menu overlay -->
-            <div class="menu-overlay" x-show="mobileMenuOpen" @click="mobileMenuOpen = false" x-transition.opacity></div>
-            
-            <!-- Nav links with Alpine transitions -->
-            <ul class="nav-links" :class="{ 'active': mobileMenuOpen }" x-transition>
-                <li><a href="#bitcoin-projects" class="glitch-hover" @click="mobileMenuOpen = false">Bitcoin</a></li>
-                <li><a href="#nostr-projects" class="glitch-hover" @click="mobileMenuOpen = false">Nostr Relays</a></li>
-                <li><a href="#nostr-bots" class="glitch-hover" @click="mobileMenuOpen = false">Nostr Bots</a></li>
-                <li><a href="#podcasts" class="glitch-hover" @click="mobileMenuOpen = false">Podcasts</a></li>
-                <li><a href="#support" class="btn btn-sm utxo-btn cyber-btn" @click="mobileMenuOpen = false">Support<span class="cyber-glitch"></span></a></li>
+            <ul class="nav-links">
+                <li class="hide-on-mobile"><a href="#bitcoin-projects" class="glitch-hover">Bitcoin</a></li>
+                <li class="hide-on-mobile"><a href="#nostr-projects" class="glitch-hover">Nostr Relays</a></li>
+                <li class="hide-on-mobile"><a href="#nostr-bots" class="glitch-hover">Nostr Bots</a></li>
+                <li class="hide-on-mobile"><a href="#podcasts" class="glitch-hover">Podcasts</a></li>
+                <li><a href="#support" class="btn btn-sm utxo-btn cyber-btn">Support<span class="cyber-glitch"></span></a></li>
             </ul>
         </div>
     </nav>
@@ -171,16 +152,29 @@
                         <div class="section-line"></div>
                     </div>
                 </div>
-                                
-                <div class="lightning-address-container">
-                    <div class="lightning-qr-wrapper">
-                        <img src="lndono.png" alt="Lightning Address QR Code" class="qr-code lightning-address-qr">
+                
+                <div class="donation-addresses-wrapper">              
+                    <div class="donation-address-container">
+                        <div class="lightning-qr-wrapper">
+                            <img src="lndono.png" alt="Lightning Address QR Code" class="qr-code lightning-address-qr">
+                        </div>
+                        <div class="address-details">
+                            <h3>Lightning Address</h3>
+                            <div class="donation-address">
+                                <code>utxo@bitvora.me</code>
+                            </div>
+                        </div>
                     </div>
-                    <div class="lightning-address">
-                        <h3>Lightning Address</h3>
-                        <div class="donation-address">
-                            <code>utxo@bitvora.me</code>
-                            <button class="copy-btn" id="copy-lightning-address">Copy</button>
+                    
+                    <div class="donation-address-container">
+                        <div class="lightning-qr-wrapper">
+                            <img src="btcdono.png" alt="Bitcoin On-Chain Address QR Code" class="qr-code bitcoin-address-qr">
+                        </div>
+                        <div class="address-details">
+                            <h3>Bitcoin On-Chain Address</h3>
+                            <div class="donation-address">
+                                <code>bc1qyr42rdllr59plp7kq8djuadflghr5r8zh7k8yeqgaussqrf68v7swyqlpm</code>
+                            </div>
                         </div>
                     </div>
                 </div>
