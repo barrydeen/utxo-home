@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>utxo the webmaster</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="utxo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="digital-rain"></div>
+    
+    <nav class="navbar utxo-nav">
+        <div class="container nav-container">
+            <div class="logo utxo-logo"><span class="terminal-prefix">$</span> utxo the webmaster<span class="blink">_</span></div>
+            <ul class="nav-links">
+                <li><a href="#bitcoin-projects" class="glitch-hover">Bitcoin</a></li>
+                <li><a href="#nostr-projects" class="glitch-hover">Nostr Relays</a></li>
+                <li><a href="#nostr-bots" class="glitch-hover">Nostr Bots</a></li>
+                <li><a href="#podcasts" class="glitch-hover">Podcasts</a></li>
+                <li><a href="#support" class="btn btn-sm utxo-btn cyber-btn">Support<span class="cyber-glitch"></span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="hero">
+            <div class="hero-content">
+                <img src="https://i.nostr.build/6G6wW.gif" alt="Profile Picture" class="profile-picture">
+                <h1 class="mega-title">You can just build things</h1>
+                <!-- <p class="hero-subtitle"></p> -->
+                <div class="cta-buttons">
+                    <a href="#bitcoin-projects" class="btn utxo-btn cyber-btn">Explore Projects<span class="cyber-glitch"></span></a>
+                    <a href="#support" class="btn utxo-btn-primary cyber-btn">Support My Work<span class="cyber-glitch"></span></a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="bitcoin-projects" class="cyber-section">
+                <div class="section-header">
+                    <div class="section-title-wrapper">
+                        <h2><span class="terminal-prefix">#</span> Bitcoin Projects</h2>
+                        <div class="section-line"></div>
+                    </div>
+                </div>
+                
+                
+                <div class="project-grid" id="repo-container-bitcoin">
+                    <!-- Repository cards will be inserted by JavaScript -->
+                    <div class="loading">
+                        <div class="cyber-spinner"></div>
+                        <p>Loading repositories...</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="nostr-projects" class="cyber-section">
+                <div class="section-header">
+                    <div class="section-title-wrapper">
+                        <h2><span class="terminal-prefix">#</span> Nostr Infrastructure</h2>
+                        <div class="section-line"></div>
+                    </div>
+                </div>
+                
+                
+                <div class="project-grid" id="repo-container-nostr">
+                    <!-- Repository cards will be inserted by JavaScript -->
+                    <div class="loading">
+                        <div class="cyber-spinner"></div>
+                        <p>Loading repositories...</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="nostr-bots" class="cyber-section">
+                <div class="section-header">
+                    <div class="section-title-wrapper">
+                        <h2><span class="terminal-prefix">#</span> Nostr Bots</h2>
+                        <div class="section-line"></div>
+                    </div>
+                </div>
+                
+                
+                <div class="project-grid" id="repo-container-bots">
+                    <!-- Repository cards will be inserted by JavaScript -->
+                    <div class="loading">
+                        <div class="cyber-spinner"></div>
+                        <p>Loading repositories...</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- New Podcast Appearances Section -->
+            <section id="podcasts" class="cyber-section">
+                <div class="section-header">
+                    <div class="section-title-wrapper">
+                        <h2><span class="terminal-prefix">#</span>Recent Podcast Appearances</h2>
+                        <div class="section-line"></div>
+                    </div>
+                </div>
+                
+                <div class="podcast-gallery">
+                    <div class="podcast-item utxo-card">
+                        <a href="https://www.youtube.com/watch?v=s5JJl8chfqQ" target="_blank" class="podcast-link">
+                            <div class="podcast-thumbnail">
+                                <img src="https://i.ytimg.com/vi/s5JJl8chfqQ/hqdefault.jpg" alt="YouTube Interview">
+                                <div class="play-button"></div>
+                            </div>
+                            <h4>What Will Fuel Bitcoin's Next Leg Up?</h4>
+                            <p>ARK Invest</p>
+                        </a>
+                    </div>
+                    
+                    <div class="podcast-item utxo-card">
+                        <a href="https://www.youtube.com/watch?v=rjIwY2LRaw4" target="_blank" class="podcast-link">
+                            <div class="podcast-thumbnail">
+                                <img src="https://i.ytimg.com/vi/rjIwY2LRaw4/hqdefault.jpg" alt="YouTube Interview">
+                                <div class="play-button"></div>
+                            </div>
+                            <h4>Introducing Bitvora</h4>
+                            <p>The CBP</p>
+                        </a>
+                    </div>
+                    
+                    <div class="podcast-item utxo-card">
+                        <a href="https://open.spotify.com/episode/3834hivjs0giLbHQhcqG5d" target="_blank" class="podcast-link">
+                            <div class="podcast-thumbnail">
+                                <img src="https://tgfb.com/wp-content/uploads/tgfb-cover2-1-1024x1024.webp" alt="Thank God for Nostr Podcast">
+                                <div class="play-button"></div>
+                            </div>
+                            <h4>Thank God for Nostr</h4>
+                            <p>UTXO Podcast</p>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="podcast-controls">
+                    <button class="podcast-nav prev cyber-btn" aria-label="Previous podcasts">←<span class="cyber-glitch"></span></button>
+                    <button class="podcast-nav next cyber-btn" aria-label="Next podcasts">→<span class="cyber-glitch"></span></button>
+                </div>
+            </section>
+            
+            <section id="support" class="donation-section cyber-section">
+                <div class="section-header">
+                    <div class="section-title-wrapper">
+                        <h2><span class="terminal-prefix">#</span> Support My Work</h2>
+                        <div class="section-line"></div>
+                    </div>
+                </div>
+                                
+                <div class="lightning-address-container">
+                    <div class="lightning-qr-wrapper">
+                        <img src="lndono.png" alt="Lightning Address QR Code" class="qr-code lightning-address-qr">
+                    </div>
+                    <div class="lightning-address">
+                        <h3>Lightning Address</h3>
+                        <div class="donation-address">
+                            <code>utxo@bitvora.me</code>
+                            <button class="copy-btn" id="copy-lightning-address">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo"><span class="terminal-prefix">$</span> utxo the webmaster<span class="blink">_</span></div>
+                    <p class="footer-tagline">finding sly and round about ways</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#bitcoin-projects">Bitcoin Projects</a></li>
+                        <li><a href="#nostr-projects">Nostr Relays</a></li>
+                        <li><a href="#nostr-bots">Nostr Bots</a></li>
+                        <li><a href="#podcasts">Podcasts</a></li>
+                        <li><a href="#support">Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/bitvora" target="_blank">GitHub</a></li>
+                        <li><a href="https://njump.me/utxo.one" target="_blank">Nostr</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; Bitvora Inc. 2025</p>
+                <a href="#" class="back-to-top">Back to top <span class="arrow">↑</span></a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Add the script references at the end of the body -->
+    <script src="github-api.js"></script>
+    <script src="cypherpunk-effects.js"></script>
+</body>
+</html>
+               
