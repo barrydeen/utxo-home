@@ -1215,7 +1215,32 @@ body, html {
     transition: all 0.3s ease;
 }
 
-/* Media queries - Update existing media queries and add new ones for mobile navigation */
+/* Hamburger animation when menu is active */
+.hamburger-menu.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Mobile menu overlay */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 90;
+    pointer-events: all;
+}
+
+/* Media queries for mobile navigation */
 @media (max-width: 768px) {
     /* Reduce hero padding/margin for mobile */
     .hero {
@@ -1240,30 +1265,29 @@ body, html {
         margin-bottom: 20px;
     }
     
-    /* Add more responsive adjustments as needed */
     .cta-buttons {
         margin-top: 25px;
     }
-    
-    /* Existing media query content... */
 }
 
 @media (max-width: 576px) {
-    /* Show hamburger menu and hide regular nav on mobile */
+    /* Show hamburger menu on mobile */
     .hamburger-menu {
         display: flex;
     }
     
+    /* Keep the container as row to place logo and hamburger */
     .nav-container {
-        flex-direction: row; /* Keep as row to place hamburger on right */
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
     
+    /* Mobile menu styling */
     .nav-links {
         position: fixed;
         top: 0;
-        right: -100%;
+        right: 0;
         width: 80%;
         max-width: 300px;
         height: 100vh;
@@ -1272,15 +1296,16 @@ body, html {
         align-items: flex-start;
         justify-content: flex-start;
         padding: 80px 30px 30px;
-        transition: right 0.3s ease;
         z-index: 100;
         box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
         border-left: 1px solid rgba(142, 68, 173, 0.3);
         margin: 0;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
     }
     
     .nav-links.active {
-        right: 0;
+        transform: translateX(0);
     }
     
     .nav-links li {
@@ -1293,43 +1318,9 @@ body, html {
         width: 100%;
         padding: 10px 0;
     }
-    
-    /* Existing media query content... */
 }
 
-/* Add overlay for when mobile menu is open */
-.menu-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 90;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-}
-
-.menu-overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-/* Hamburger animation when menu is active */
-.hamburger-menu.active .bar:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
-}
-
-.hamburger-menu.active .bar:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger-menu.active .bar:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
-}
-
-/* Add this to the CSS file */
-body.menu-open {
-    overflow: hidden;
+/* Alpine.js specific styles */
+[x-cloak] {
+    display: none !important;
 }

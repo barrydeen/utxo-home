@@ -30,48 +30,4 @@ document.addEventListener('DOMContentLoaded', function() {
             gallery.scrollBy({ left: itemWidth * 2, behavior: 'smooth' });
         });
     }
-});
-
-// Mobile menu functionality
-document.addEventListener('DOMContentLoaded', function() {
-    // Variables for mobile menu
-    const hamburger = document.querySelector('.hamburger-menu');
-    const navLinks = document.querySelector('.nav-links');
-    const body = document.body;
-    
-    // Create an overlay element for the mobile menu background
-    const overlay = document.createElement('div');
-    overlay.className = 'menu-overlay';
-    body.appendChild(overlay);
-    
-    // Toggle mobile menu
-    function toggleMobileMenu() {
-        hamburger.classList.toggle('active');
-        navLinks.classList.toggle('active');
-        overlay.classList.toggle('active');
-        body.classList.toggle('menu-open'); // Prevent background scrolling when menu is open
-    }
-    
-    // Add click event to hamburger
-    hamburger.addEventListener('click', toggleMobileMenu);
-    
-    // Close menu when clicking on overlay
-    overlay.addEventListener('click', toggleMobileMenu);
-    
-    // Close menu when clicking on nav links
-    const navItems = document.querySelectorAll('.nav-links a');
-    navItems.forEach(item => {
-        item.addEventListener('click', function() {
-            if (navLinks.classList.contains('active')) {
-                toggleMobileMenu();
-            }
-        });
-    });
-    
-    // Close menu on window resize if screen gets larger
-    window.addEventListener('resize', function() {
-        if (window.innerWidth > 576 && navLinks.classList.contains('active')) {
-            toggleMobileMenu();
-        }
-    });
 }); 
